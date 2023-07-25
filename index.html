@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="py-5 bg-danger-subtle min-vh-100">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <h1 class="position-relative ">Bookmarker</h1>
+
+            <div class="bookmark-body mt-5 px-4 pt-3 w-100 d-flex flex-column justify-content-center align-items-center">
+                <h4>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h4>
+
+                <form action="" class="w-100">
+
+                    <label for="sn" class="p-2 pt-4 text-black">
+                        <i class="fa-solid fa-book-bookmark pe-1"></i>
+                        Site Name
+                    </label>
+                    <input id="sn" type="text" class="form-control" placeholder="Bookmark Name">
+
+                    <label for="su" class="p-2 pt-4 text-black">
+                        <i class="fa-solid fa-link"></i>
+                        Site URL
+                    </label>
+                    <input id="su" type="text" class="form-control" placeholder="Website URL">
+                </form>
+
+                <button onclick="submination()" class="btn btn-danger my-4 px-5">Submit</button>
+            </div>
+
+            <table class="table text-center mt-4">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
